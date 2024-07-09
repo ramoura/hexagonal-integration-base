@@ -1,4 +1,4 @@
-package github.com.ramoura.quote.infra;
+package github.com.ramoura.quote.infra.gateway;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

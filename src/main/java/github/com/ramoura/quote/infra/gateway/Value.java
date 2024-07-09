@@ -1,4 +1,4 @@
-package github.com.ramoura.quote.infra;
+package github.com.ramoura.quote.infra.gateway;
 
 public class Value{
 

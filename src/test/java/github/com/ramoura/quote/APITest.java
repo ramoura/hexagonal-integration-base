@@ -1,9 +1,8 @@
 package github.com.ramoura.quote;
 
 
-import github.com.ramoura.quote.application.QuoteGateway;
-import github.com.ramoura.quote.infra.Root;
-import github.com.ramoura.quote.infra.Value;
+import github.com.ramoura.quote.infra.gateway.Root;
+import github.com.ramoura.quote.infra.gateway.Value;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mockito;

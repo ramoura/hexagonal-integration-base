@@ -1,4 +1,4 @@
-package github.com.ramoura.quote.infra;
+package github.com.ramoura.quote.infra.http;
 
 import github.com.ramoura.quote.application.GetQuote;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,7 +1,6 @@
-package github.com.ramoura.quote.infra;
+package github.com.ramoura.quote.infra.gateway;
 
 import github.com.ramoura.quote.application.QuoteGateway;
-import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
