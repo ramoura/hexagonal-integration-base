@@ -1,19 +1,24 @@
-package github.com.ramoura.quote;
+package github.com.ramoura.quote.infra;
 
+import github.com.ramoura.quote.application.GetQuote;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/quote")
 public class QuoteController {
 
-    @GetMapping("/{code}")
-    public Response getQuote(@PathVariable String code){
-        return new Response(3.33);
+    private final GetQuote getQuote;
+
+    public QuoteController(GetQuote getQuote) {
+        this.getQuote = getQuote;
     }
 
-    public record Response(Double value){}
+    @GetMapping("/{code}")
+    public GetQuote.Output getQuote(@PathVariable String code){
+        return getQuote.execute(code);
+    }
+
 }
